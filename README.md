@@ -12,6 +12,6 @@ To run the application from a command window:
 
   `DynamoDeleteAllRows.exe table_name hash_key_name [range_key_name]`
 
-*table_name* - The name of the DynamoDB table.
-*hash_key_name* - The name of the hash key for the table.
-*range_key_name* - The name of the range key for the table if it has one.
+*table_name* - The name of the DynamoDB table.  
+*hash_key_name* - The name of the hash key for the table.  
+*range_key_name* - The name of the range key for the table if it has one.  
