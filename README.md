@@ -1,5 +1,5 @@
 # DynamoDB Delete All Rows
-Application for deleting all rows from a DynamoDB table. It does this by scanning the table to retrieve the primary key values and then deletes the rows in batches. Currently, AWS limits the maximum batch size to 25, so with large amounts of data multiple requests are executed.
+Application for deleting all rows from a DynamoDB table. It does this by scanning the table to retrieve the primary key values and then deletes the rows in batches. Currently, AWS limits the maximum batch size to 25, so with large amounts of data multiple requests are executed. Note - no throttling is currently performed so if you have a lot of data you table capacity will be maxed out and eventually AWS will reject the delete requests. In this scenario just wait a little while and retry. At some point if I get time I might add some code to automatically limit the capacity consumption to avoid this problem.
 
 # Prerequisites
 You will need to download and install the [AWS SDK for .NET](https://aws.amazon.com/sdk-for-net/).
